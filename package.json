@@ -1,0 +1,19 @@
+{
+  "name": "cardgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauragarmunoz/cardGame.git"
+  },
+  "author": "lauragarmunoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lauragarmunoz/cardGame/issues"
+  },
+  "homepage": "https://github.com/lauragarmunoz/cardGame#readme"
+}

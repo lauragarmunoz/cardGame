@@ -1,0 +1,49 @@
+<div class="state-container">
+    <h1> Por favor, introduce tus datos para darte de alta </h1>
+    <div class="form-container">
+        <div class="form">
+            <!--<div class="msg-error" 
+            ng-show="viewAdd.showMsg">RELLENA LOS CAMPOS!!!!</div>-->
+            <p>
+                <input 
+                type="text" 
+                id="username" 
+                ng-model="viewSignup.playerUsername"
+                > 
+                <!--ng-class="{ 'has-error': !viewSignup.playerUsername && viewSignup.formIsSend }"-->
+                <label for="playerUsername">
+                    Usuario
+                </label>
+            </p>
+            <p>
+                <input 
+                type="text" 
+                id="password" 
+                ng-model="viewSignup.playerPassword"
+                >
+                <!--ng-class="{ 'has-error': !viewSignup.playerPassword && viewSignup.formIsSend }"-->
+                <label for="password">
+                    Contraseña
+                </label>
+            </p>
+            <p>
+                <select 
+                id="avatar" 
+                ng-model="viewSignup.playerAvatar"
+                >
+                <!--ng-class="{ 'has-error': !viewSignup.playerAvatar && viewSignup.formIsSend }"-->
+                    <option value="pepito">Gato</option>
+                    <option value="maria">Camaleón</option>
+                </select>
+                <label for="playerAvatar">
+                    Avatar
+                </label>
+            </p> 
+            <p>
+                <button class="login-button" ng-click="viewSignup.goToPlay()">
+                    Enviar y jugar
+                </button>
+            </p>
+        </div>
+    </div>
+</div>

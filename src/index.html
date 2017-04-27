@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>angular 1.6 workshop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="app/styles/main.css">
+</head>
+
+<body ng-app="app" ng-strict-di>
+    <section class="main-container">
+        <header-card></header-card>   
+        <ui-view></ui-view>  
+        <footer-card></footer-card>      
+    </section>
+    
+    <!-- angular -->
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-ui-router.min.js"></script>
+    <!--  <script src="vendor/angular-animate.min.js"></script>-->
+
+    <!-- our app -->
+    <script src="app/app.js"></script>
+
+    <!-- servicios / factorías -->
+    <script src="app/services/players-factory.js"></script>
+
+    <!-- componentes -->
+        <!-- pantalla main -->
+        <script src="app/components/main/main.js"></script>
+
+        <!-- pantalla about -->
+        <script src="app/components/about/about.js"></script>
+
+          <!-- pantalla signup -->
+        <script src="app/components/signup/signup.js"></script>
+
+          <!-- pantalla play -->
+        <script src="app/components/play/play.js"></script>
+
+        <!-- comunes -->
+        <script src="app/components/commons/header/header.js"></script>
+        <script src="app/components/commons/footer/footer.js"></script>
+
+
+</body>
+
+
+</html>

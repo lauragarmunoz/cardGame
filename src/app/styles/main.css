@@ -1,0 +1,115 @@
+.main-container {
+    position: center;
+    font-family: Helvetica;
+}
+
+
+.state-container {
+    border:  3px solid red;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    display: block;
+    margin: 30px; 
+}
+
+
+
+
+
+.main-header {
+    font-size:40px;
+    color: wheat;
+    text-align: center;
+    background: grey;
+    height: 60px;
+}
+
+.sub-header {
+    font-size:20px;
+    text-align: center;
+    background: lightgrey;
+    height: 40px;
+    color: grey;
+}
+
+#logo {
+    height: 40px;
+}
+
+.main-footer {
+    text-align: center;
+    background: grey;
+    height: 20px;
+    color: wheat;
+}
+
+
+.login-button {
+    background: wheat;
+    color: grey;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+
+.signup-button {
+    background: grey;
+    color: wheat;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+
+
+.form-container {
+    text-align: center;
+    background: grey;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    margin-left: 200px;
+    color: wheat;
+   
+}
+
+.form-title {
+    font-size: 20px;
+    color: wheat;
+}
+.form {
+    text-align: left;
+    color: wheat;
+}
+
+.game-container {
+    
+    background: lightcyan;
+   
+}
+
+.card {
+    height: 125px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 0.5em;
+    padding:0.2em;
+    overflow:hidden;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
