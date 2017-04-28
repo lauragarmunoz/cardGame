@@ -83,6 +83,26 @@
 }
 
 
+.avatar-img {
+   height: 100px; 
+   display: inline-block;
+}
+
+.avatar-selector > input{ /* HIDE RADIO */
+  visibility: hidden; 
+  position: absolute; 
+}
+
+.avatar-selector > input + img{ 
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+.avatar-selector > input:checked + img { 
+  border:2px solid #f00;
+}
+
+
 .card-container {
   padding:0.2em;
   border: 1px solid #ff9933;
@@ -95,8 +115,6 @@
     display: inline-block;
     margin: 0.5em;
     padding:0.2em;
-
-    display: inline-block;
 }
 
 .card-img {

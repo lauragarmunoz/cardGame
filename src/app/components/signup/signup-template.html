@@ -9,7 +9,7 @@
                 type="text" 
                 id="username" 
                 ng-model="viewSignup.playerUsername"
-                ng-class="{ 'has-error': !viewSignup.playerUsername && viewSignup.formIsSend }">
+                >
                 <label for="playerUsername">
                     Usuario
                 </label>
@@ -19,23 +19,32 @@
                 type="text" 
                 id="password" 
                 ng-model="viewSignup.playerPassword"
-                
-                ng-class="{ 'has-error': !viewSignup.playerPassword && viewSignup.formIsSend }">
+                >
                 <label for="password">
                     Contraseña
                 </label>
             </p>
-            <p>
-                <select 
+            <p class="avatar-selector">
+                <input
+                type="radio"
                 id="avatar" 
                 ng-model="viewSignup.playerAvatar"
-                ng-class="{ 'has-error': !viewSignup.playerAvatar && viewSignup.formIsSend }">
-                    <option value="gato.jpg">Gato</option>
-                    <option value="camaleon.jpg">Camaleón</option>
-                </select>
+                value="app/styles/imgs/anim/cats.jpg"> 
+
                 <label for="playerAvatar">
-                    Avatar
+                    <img class="avatar-img" src="app/styles/imgs/anim/cats.jpg">
                 </label>
+                
+
+                <input
+                type="radio"
+                id="avatar" 
+                ng-model="viewSignup.playerAvatar"
+                value="app/styles/imgs/anim/camaleones.jpg">
+                <label for="playerAvatar">
+                    <img class="avatar-img" src="app/styles/imgs/anim/camaleones.jpg">
+                </label>
+           
             </p> 
             <p>
                 <button class="login-button" ng-click="viewSignup.signupPlayer()">

@@ -10,8 +10,7 @@
     var vm = this;
 
     vm.$onInit = function() { 
-/*      vm.showMsg = false;
-      vm.formIsSend = false;    */ 
+
     };
 
     vm.signupPlayer = function() {
@@ -21,6 +20,7 @@
          avatar: vm.playerAvatar
         };
 
+console.log(newPlayer)
 
       playersFactory.signupPlayer(newPlayer);
       $state.go('play');   
