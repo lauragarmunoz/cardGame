@@ -33,16 +33,11 @@
       template: '<view-signup></view-signup>'
     };
 
-
-    
-  
-
     $stateProvider.state(main);
     $stateProvider.state(about);
     $stateProvider.state(play);
     $stateProvider.state(signup);
     
-
 
     /* Definimos una ruta por defecto: */
     $urlRouterProvider.otherwise('/main');

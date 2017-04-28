@@ -13,10 +13,6 @@
     margin: 30px; 
 }
 
-
-
-
-
 .main-header {
     font-size:40px;
     color: wheat;
@@ -86,23 +82,27 @@
     color: wheat;
 }
 
-.game-container {
-    
-    background: lightcyan;
-   
+
+.card-container {
+  padding:0.2em;
+  border: 1px solid #ff9933;
 }
 
-.card {
-    height: 125px;
+.playing-cards {
+
     border: 1px solid #ccc;
+    border-radius: 3px;
     display: inline-block;
     margin: 0.5em;
     padding:0.2em;
-    overflow:hidden;
-    text-align: center;
-    cursor: pointer;
 
+    display: inline-block;
 }
+
+.card-img {
+    height: 200px;
+}
+
 
 
 
