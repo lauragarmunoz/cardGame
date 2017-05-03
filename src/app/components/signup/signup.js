@@ -1,7 +1,7 @@
 (function(angular) {
 
   angular.module('app').component('viewSignup', {
-    templateUrl:  'app/components/signup/signup-template.html',
+    templateUrl:  'app/components/signup/Signup-template.html',
     controller: ['$state', 'playersFactory', viewSignup],
     controllerAs: 'viewSignup'
   });
@@ -20,14 +20,18 @@
          avatar: vm.playerAvatar
         };
 
-console.log(newPlayer)
-
       playersFactory.signupPlayer(newPlayer);
+      $state.go('play');   
+    };
+    
+    vm.goToLogin = function() {
+      $state.go('login');   
+    };
+
+    vm.goToPlay = function() {
       $state.go('play');   
     };
 
   }
 
 })(angular);
-
-

@@ -2,21 +2,27 @@
 
   angular.module('app').component('viewMain', {
     templateUrl:  'app/components/main/main-template.html',
-    controller: ['$state', viewMain],
+    controller: ['$state', 'playersFactory', viewMain],
     controllerAs: 'viewMain'
   });
 
-  function viewMain($state) {
+  function viewMain($state,  playersFactory) {
     var vm = this;
- 
-    vm.goToPlay = function() {
-        $state.go('play');
-      };
 
+    vm.$onInit = function() { 
+
+    };
+    
     vm.goToSignup = function() {
-        $state.go('signup');
-      };
-  
-  };
+      $state.go('signup');   
+    };
+    
+    vm.goToLogin = function() {
+      $state.go('login');   
+    };
+
+  }
 
 })(angular);
+
+

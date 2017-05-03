@@ -1,37 +1,26 @@
 <div class="state-container">
-    <div class="form-container">
-        <div class="form">
-            <h1 class="form-title"> Tengo una cuenta 
-            </h1>
-                <p>
-                    <input 
-                    type="text" 
-                    id="username" 
-                    ng-model="viewMain.playerUsername"
-                    > 
-                <!--ng-class="{ 'has-error': !viewMain.playerUsername && viewMain.formIsSend }"-->
-                    <label for="username">
-                        Usuario
-                    </label>
-                </p>
-                <p>
-                    <input 
-                    type="text" 
-                    id="password" 
-                    ng-model="viewMain.playerPassword"
-                    >
-                    <!--ng-class="{ 'has-error': viewMain.playerPassword && viewMain.formIsSend }"-->
-                    <label for="password">
-                        Contraseña
-                    </label>
-                </p>
-                </p>
-                    <button class="login-button" ng-click="viewMain.goToPlay()"> Jugar 
-                </p>
+    <div class="mainview-container">
+        <div class="title"> 
+            ¡Bienvenido! 
         </div>
-    </div>
-
-    <div>
-        <button class="signup-button" ng-click="viewMain.goToSignup()"> Nuevo jugador 
+        <div class="intro-text">
+                Pon a prueba tu memoria con este apasionante juego.
+                Destapa dos cartas y recuerda dónde está cada una. 
+                Cuando encuentres dos cartas idénticas, quedarán visibles 
+                y la partida acabará cuando todas las cartas queden visibles.
+                Trata de acabar la partida en el menor tiempo posible.
+            
+                <p> ¿Estás preparado? </p>
+        </div>
+        <div>
+                <button class="button" ng-click="viewMain.goToSignup()">
+                        SIGUIENTE >>
+                </button>
+        </div>
+            <img class="animation" src="app/styles/imgs/animation.gif" > 
+        </div>
+        <div>
+                <a ng-click="viewMain.goToLogin()" class="intro-text link"> Ya estoy registrado </a>
+        </div>
     </div>
 </div>

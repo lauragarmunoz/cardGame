@@ -1,0 +1,13 @@
+<div class='ng-modal' ng-if='show'>
+  <div class='ng-modal-overlay'></div>
+  <div class='ng-modal-dialog' ng-if='show' ng-style='dialogStyle'>
+    <!--<div class='ng-modal-close' ng-click='hideModal()'>X</div>-->
+    <div class='ng-modal-dialog-content'>
+      Aquí va el modal
+      <p>Enhorabuena {{playerInfo.playerUsername}}</p>
+      <p>¿Qué quieres hacer?</p>
+      <button ng-click=goToPlay()>Volver a jugar</button>
+      <button ng-click=goToShare()>Compartir en Facebook</button>
+    </div>
+  </div>
+</div>

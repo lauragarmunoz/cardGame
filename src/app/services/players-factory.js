@@ -15,22 +15,6 @@
 
       module.newPlayer = false;
 
-
-/*      module.getPlayerById = function(_id_) {
-      var len = self.allPlayers.length;
-      var id = parseInt(_id_);
-
-        if ( !id ) {
-          return false;
-        }
-
-        while ( len-- ) {
-          if ( self.allPlayers[len].id === id ) {
-            return self.allPlayers[len];
-          }
-        }
-      };*/
-
       module.signupPlayer = function(newPlayer) {
         self.newPlayer = newPlayer;
       };
